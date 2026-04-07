@@ -1,0 +1,266 @@
+{
+  "main": {
+    "id": "fc9683a729516656",
+    "type": "split",
+    "children": [
+      {
+        "id": "fa94a49f46663ed5",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "860fe6a1ae088aca",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "lecture 2 Intelligent Agent.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "lecture 2 Intelligent Agent"
+            }
+          },
+          {
+            "id": "038b20df3f8eefb4",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "lecture 3 Problem solving by searching.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "lecture 3 Problem solving by searching"
+            }
+          },
+          {
+            "id": "eb188a09c2b1c748",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "lecture 4 Searching (continuation).md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "lecture 4 Searching (continuation)"
+            }
+          },
+          {
+            "id": "4f19782b37c3204f",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "lecture 5 searching in complex environment.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "lecture 5 searching in complex environment"
+            }
+          },
+          {
+            "id": "fa07dc911784f5db",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "lecture 2 Intelligent Agent.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "lecture 2 Intelligent Agent"
+            }
+          },
+          {
+            "id": "c4a175778a0d21d4",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "lecture 9 (Perceptron).md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "lecture 9 (Perceptron)"
+            }
+          }
+        ],
+        "currentTab": 5
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "14f594d17cf92eb9",
+    "type": "split",
+    "children": [
+      {
+        "id": "67046b4a8e283f4c",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "1d255414c4699a66",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical",
+                "autoReveal": false
+              },
+              "icon": "lucide-folder-closed",
+              "title": "Files"
+            }
+          },
+          {
+            "id": "8cd0e4ebc01bcc03",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "Search"
+            }
+          },
+          {
+            "id": "5eab7cd28f7ea34e",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "Bookmarks"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "235880a377866759",
+    "type": "split",
+    "children": [
+      {
+        "id": "1534b431b526bade",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "772ca46ba27162fd",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "lecture 3 problem solving by searching.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "Backlinks for lecture 3 problem solving by searching"
+            }
+          },
+          {
+            "id": "d9abf443d440a511",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "lecture 3 problem solving by searching.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "Outgoing links from lecture 3 problem solving by searching"
+            }
+          },
+          {
+            "id": "d929829bc9716013",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-tags",
+              "title": "Tags"
+            }
+          },
+          {
+            "id": "621f86b0079034c3",
+            "type": "leaf",
+            "state": {
+              "type": "all-properties",
+              "state": {
+                "sortOrder": "frequency",
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-archive",
+              "title": "All properties"
+            }
+          },
+          {
+            "id": "13a2bda72a0c43ab",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "lecture 3 problem solving by searching.md",
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-list",
+              "title": "Outline of lecture 3 problem solving by searching"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false,
+      "bases:Create new base": false
+    }
+  },
+  "active": "c4a175778a0d21d4",
+  "lastOpenFiles": [
+    "lecture 2 Intelligent Agent.md",
+    "lecture 9 (Perceptron).md",
+    "lecture 3 Problem solving by searching.md",
+    "lecture 4 Searching (continuation).md",
+    "lecture 5 searching in complex environment.md",
+    "lecture 6 (Constraint problems).md"
+  ]
+}
