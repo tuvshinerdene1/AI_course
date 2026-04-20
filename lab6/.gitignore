@@ -1,0 +1,14 @@
+# Virtual Environment
+venv/
+.venv/
+env/
+bin/
+Lib/
+Scripts/
+
+# Python cache
+__pycache__/
+*.pyc
+
+# Data files (optional - if you don't want to upload your csv)
+# iris.csv
