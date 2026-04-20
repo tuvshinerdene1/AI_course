@@ -90,9 +90,23 @@
               "icon": "lucide-file",
               "title": "lecture 9 (Perceptron)"
             }
+          },
+          {
+            "id": "9dd345401f33b450",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "lecture 10 ( decision tree + logistic regression).md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "lecture 10 ( decision tree + logistic regression)"
+            }
           }
         ],
-        "currentTab": 5
+        "currentTab": 6
       }
     ],
     "direction": "vertical"
@@ -254,10 +268,11 @@
       "bases:Create new base": false
     }
   },
-  "active": "c4a175778a0d21d4",
+  "active": "9dd345401f33b450",
   "lastOpenFiles": [
-    "lecture 2 Intelligent Agent.md",
     "lecture 9 (Perceptron).md",
+    "lecture 10 ( decision tree + logistic regression).md",
+    "lecture 2 Intelligent Agent.md",
     "lecture 3 Problem solving by searching.md",
     "lecture 4 Searching (continuation).md",
     "lecture 5 searching in complex environment.md",
