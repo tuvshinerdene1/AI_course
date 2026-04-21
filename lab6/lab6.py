@@ -1,59 +1,71 @@
-import pandas as pd
 import numpy as np
+import pandas as pd
 
-class Perceptron:
 
-    def __init__(self, learning_rate=0.01, epochs=100):
-        self.lr = learning_rate
+class ClassicMultiPerceptron:
+    def __init__(self, input_size, num_classes, epochs=100) -> None:
         self.epochs = epochs
-        self.weights = None
-        self.bias = None
+        self.W = np.zeros((num_classes, input_size))
+        self.b = np.zeros(num_classes)
 
-    def fit(self, x, y):
-        n_samples, n_features = x.shape
-        self.weights = np.zeros(n_features)
-        self.bias = 0
+    def fit(self, X, y):
+        for epoch in range(self.epochs):
+            made_update = False
+            for idx, x_i in enumerate(X):
+                scores = np.dot(self.W, x_i) + self.b
 
-        for _ in range(self.epochs):
-            for idx, x_i in enumerate(x):
-                linear_output = np.dot(x_i, self.weights) + self.bias
-                y_predicted = 1 if linear_output >= 0 else 0
+                y_pred = np.argmax(scores)
+                y_true = y[idx]
 
-                update = self.lr * (y[idx] - y_predicted)
-                self.weights += update * x_i
-                self.bias += update
-    
-    def predict (self, x):
-        linear_output = np.dot(x, self.weights) + self.bias
-        y_predicted = np.where(linear_output >= 0, 1, 0)
-        return y_predicted
+                if y_pred != y_true:
+                    self.W[y_pred] -= x_i
+                    self.b[y_pred] -= 1
+
+                    self.W[y_true] += x_i
+                    self.b[y_true] += 1
+
+                    made_update = True
+            if not made_update:
+                print(f"Converged early at epoch {epoch}")
+                break
+
+    def predict(self, X):
+        scores = np.dot(X, self.W.T) + self.b
+        return np.argmax(scores, axis=1)
 
 
-df = pd.read_csv('Iris.csv')
+df = pd.read_csv("Iris.csv")
 
-df['Species'] = df['Species'].apply(lambda x: 1 if x == 'Iris-versicolor' else 0)
+X = df.drop(["Id", "Species"], axis=1).values
 
-x = df.drop(['Id', 'Species'], axis=1).values
-y = df['Species'].values
+labels, y_names = pd.factorize(df["Species"])
+y = labels
 
-np.random.seed(42)
-indices = np.arange(x.shape[0])
+
+np.random.seed(52)
+indices = np.arange(X.shape[0])
 np.random.shuffle(indices)
 
-train_size = int(0.7*len(x))
-train_idx, test_idx = indices[:train_size], indices[train_size:]
+train_size = int(0.7 * len(X))
+X_train, X_test = X[indices[:train_size]], X[indices[train_size:]]
+y_train, y_test = y[indices[:train_size]], y[indices[train_size:]]
 
-x_train, x_test = x[train_idx], x[test_idx]
-y_train, y_test = y[train_idx], y[test_idx]
 
-model = Perceptron(learning_rate=0.1, epochs=50)
-model.fit(x_train, y_train)
+model = ClassicMultiPerceptron(input_size=4, num_classes=3, epochs=50)
+model.fit(X_train, y_train)
 
-predictions = model.predict(x_test)
 
+predictions = model.predict(X_test)
 accuracy = np.mean(predictions == y_test)
-print(f"Model Accuracy : {accuracy*100:.2f}%")
 
-print("\nSample Predictions (1=Setosa, 0=Other):")
-print("Actual: ", y_test[:10])
-print("Predicted:", predictions[:10])
+print(f"\nFinal Test Accuracy: {accuracy * 100:.2f}%")
+print("\nSample Comparisons:")
+for i in range(10):
+    if y_names[y_test[i]] == y_names[predictions[i]]:
+        print(
+            f"Correct prediction Actual: {y_names[y_test[i]]} | Predicted: {y_names[predictions[i]]}"
+        )
+    else:
+        print(
+            f"Incorrect prediction Actual: {y_names[y_test[i]]} | Predicted: {y_names[predictions[i]]}"
+        )
